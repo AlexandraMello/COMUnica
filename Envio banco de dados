@@ -1,5 +1,8 @@
-<?php
+
 // envia os dados da página para o banco de dados//
+
+<?php
+
       $vnome= filter_input(INPUT_PUST, 'tnome', FILTER_SANITIZE_STRING);
 
         echo "nome: $vnome <br>";
