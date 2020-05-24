@@ -1,3 +1,5 @@
+
+// envia os dados da página para o banco de dados//
 <?php
 
 if (isset($_POST['temail'])) && !empaty($_POST['temail']){
