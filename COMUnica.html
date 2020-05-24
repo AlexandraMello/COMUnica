@@ -1,0 +1,49 @@
+<?php include("receber.php") ?>
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>COMUnica</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aplicattion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+    <main>
+      <div class="Logo">
+        <img src="LLogo.png" alt="Logo do projeto">
+      </div>
+        </div>
+      <h1 class="Nome">Em prol de um mundo com menos descarte</h1>
+
+      <h2 class="Explicação">O que é COMUnica?</h2>
+
+      <p>É um tem como principal objetivo reduzir o desperdício de materiais  e gerando distribuição de cestas básicas, kits (ondem iram conter produtos de limpeza, higiene pessoal e roupas) e quentinhas agregadas a kits através de uma plataforma onde as empresas cadastram produtos que julgam ser defeituosos e com prazo de validade de 2 a 1 mês, dependendo de qual for, próximo a se vencer e próprio para consumo. Os direcionando a um público de baixa renda. As empresas poderam doar a restaurantes, produtores ou sindicatos dos moradores de determinada região para produção dos kits e cestas  a serem distribuídos para moradores de ruas, pessoas sem acesso a Internet e grupos cadastrados</p>
+
+      <h2>Quem pode usar?</h2>
+
+      <p>Este site é destinado a todos  de baixa renda e com o desejo de contribuir para a diminuição do disperdicio de material</p>
+
+
+      <hr>
+        <div class="cadastros">
+          <h2>Cadastramento</h2>
+              <form name="f_cad" method="POST" action="./php/recebe.php">
+                  <p>Email:<input type="text" name="temail" id=cemail placeholder="Digite seu email"></p>
+                  <p> Nome: <input type="text" name="tnome" id="cnome" placeholder="Digite seu nome ou nome da empresa" size="30"> </p>
+                  <p> CPF ou CNPJ: <input type="text" name="tcpf" id="ccpf"placeholder="111111111-11"> </p>
+                  <p> Endereço: <input type="text" name="tend" id="cend" placeholder="Rua X, cidade Y, RJ"> </p>
+                  <p> Produto: <input type="text" name="tprod" id="cprod" placeholder="Nome do Produto">  </p>
+                  <p> Validade: <input type="text" name="tval" id="cval" placeholder="31/12/2021"> </p>
+                  <p> Quantidade: <input type="text" name="tquant" id="cquant"> </p>
+                <input type="submit" value="Enviar">
+              </form>
+        </div>
+
+    </main>
+  </body>
+</html>
