@@ -1,0 +1,22 @@
+<?php
+
+      $vnome= filter_input(INPUT_PUST, 'tnome', FILTER_SANITIZE_STRING);
+
+        echo "nome: $vnome <br>";
+
+      $vcpf= filter_input(INPUT_PUST, 'tcpf', FILTER_SANITIZE_STRING);
+
+        echo "nome: $vcpf <br>";
+      $vend= filter_input(INPUT_PUST, 'tend', FILTER_SANITIZE_STRING);
+
+        echo "nome: $vend <br>";
+      $vprod= filter_input(INPUT_PUST, 'tprod', FILTER_SANITIZE_STRING);
+
+        echo "nome: $vprod <br>";
+      $vval= filter_input(INPUT_PUST, 'tval', FILTER_SANITIZE_STRING);
+
+        echo "nome: $vval <br>";
+      $vquant= filter_input(INPUT_PUST, 'tquant', FILTER_SANITIZE_STRING);
+
+        echo "nome: $vquant <br>";
+?>
